@@ -51,6 +51,8 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "aot": true,
+              "buildOptimizer": true,
               "outputHashing": "all"
             },
             "development": {

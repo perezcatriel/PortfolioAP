@@ -1,0 +1,47 @@
+
+
+
+
+/* acerda de */
+.acerca-de {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: var(--white);
+  width: 100vw;
+  height: 50vh;
+  padding-top: 60px;
+}
+.acerca-de section {
+  margin: 20px;
+  padding: 20px;
+}
+.acerca-de section h2 {
+  font-size: 4rem;
+  color: var(--blue);
+  font-weight: 900;
+  text-shadow: 2px 2px var(--grey);
+}
+.nombre h3 {
+  margin-top: 20px;
+  font-size: 3.6rem;
+  color: var(--grey);
+  font-weight: 900;
+}
+.nombre {
+  margin-top: 20px;
+  padding: 20px;
+}
+.presentacion h3 {
+  font-size: 3.6rem;
+  color: var(--blue);
+  font-weight: 900;
+}
+.acerca-de section p {
+  margin-top: 20px;
+  width: 90%;
+  font-size: 2.4rem;
+  color: var(--grey);
+}
+
+
+

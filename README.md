@@ -1,27 +1,108 @@
-# PortfolioAP
+# Portfolio para Argentina Programa
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+*Proyecto final de Argentina Programa.*
 
-## Development server
+Creación de un portfolio personal dinámico con Angular, JAVA del lado del servidor y utilizando MySQL para base de datos.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![plot](https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1643416595/APLogo-20-20.png)
 
-## Code scaffolding
+## Comenzando 🚀
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+*Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.*
 
-## Build
+Mira **Deployment** para conocer como desplegar el proyecto.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Pre-requisitos 📋
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+*Que cosas necesitas para instalar el software y como instalarlas*
 
-## Running end-to-end tests
+```
+git clone ...
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Instalación 🔧
 
-## Further help
+*Para utilizar este proyecto una vez clonado, tienes que ejecutar NPM*
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+*ubicación*
+
+```
+cd carpetaDeTuRepo
+```
+
+*Instalando npm*
+
+```
+npm init -y
+```
+
+*Si necesitas modificar los datos podrás realizarlo en el archivo* **package.json**
+
+## Ejecutando las pruebas ⚙️
+
+*Explica como ejecutar las pruebas automatizadas para este sistema*
+
+### Analice las pruebas end-to-end 🔩
+
+*Explica que verifican estas pruebas y por qué*
+
+```
+Sin pruebas por el momento.
+```
+
+### Y las pruebas de estilo de codificación ⌨️
+
+*Explica que verifican estas pruebas y por qué*
+
+```
+sin comentarios
+```
+
+## Deployment 📦
+
+_Agrega notas adicionales sobre como hacer deploy_
+
+## Construido con 🛠️
+
+_Menciona las herramientas que utilizaste para crear tu proyecto_
+
+* [HTML](https://w3c.org/) - El lenguaje de etiquetado web usado
+* [VScode](https://code.visualstudio.com/) - el IDE
+* [MarkDown](https://markdownguide.org) - El lenguaje para escribir este README
+* [npm](https://npmjs.com) - El manejador de paquetes
+
+
+## Contribuyendo 🖇️
+
+Por favor lee el [CONTRIBUTING.md](#contributing) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+
+## Wiki 📖
+
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/perezcatriel/portfolio_argentina_programa)
+
+## Versionado 📌
+
+Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/perezcatriel/portfolio_argentina_programa).
+
+## Autores ✒️
+
+_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+
+* **Catriel Pérez** - *Developer* - [perezcatriel](https://github.com/perezcatriel)
+* **Argentina Programa** - *Curso de FullStack web* - [argentinaprograma](https://argentinaprograma.inti.gob.ar/)
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/perezcatriel) quíenes han participado en este proyecto. 
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia (MIT) - mira el archivo [Licencia](https://es.wikipedia.org/wiki/Licencia_MIT) para detalles
+
+## Expresiones de Gratitud 🎁
+
+* Comenta a otros sobre este proyecto 📢
+* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
+* Da las gracias públicamente 🤓.
+* etc.
+---
+⌨️ con ❤️ por [perezcatriel](https://github.com/perezcatriel) 😊

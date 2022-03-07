@@ -1,0 +1,22 @@
+div figure img {
+  width: 100vw;
+  height: 500px;
+  z-index: 1;
+  /* background-size: cover; */
+}
+
+.profile-container {
+  position: relative;
+  border-bottom: 3px solid var(--white);
+}
+.profile-image {
+  position: absolute;
+  top: -120px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 10px var(--grey);
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  object-fit: cover;
+}
