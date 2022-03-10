@@ -15,3 +15,10 @@
   font-family: var(--font);
   font-size: 62.5%;
 }
+
+h3 {
+  margin-top: 80px;
+  font-size: 3.6rem;
+  color: var(--blue);
+  font-weight: 900;
+}
