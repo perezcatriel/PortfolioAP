@@ -3,6 +3,7 @@ h2 {
   color: var(--blue);
   font-weight: 900;
   text-shadow: 2px 2px var(--grey);
+  margin-top: 160px;
 }
 
 h3 {

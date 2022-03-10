@@ -1,8 +1,12 @@
-.acerca-de {
+main {
   display: grid;
-  grid-template-columns: 30% 70%;
-  background-color: var(--white);
-  width: 100vw;
-  height: 50vh;
-  padding-top: 60px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(1fr);
+  grid-area: "
+  title about
+  title eduacation
+  title experience
+  title project
+  title skill
+  ";
 }

@@ -7,9 +7,25 @@ import { HeaderComponent } from './components/header/header.component';
 import { ProfilePictureAndBackgroundComponent } from './components/profile-picture-and-background/profile-picture-and-background.component';
 import { TitleComponent } from './components/title/title.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProjectsComponent } from './components/myProjects/projects.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, ProfilePictureAndBackgroundComponent, TitleComponent, PresentationComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    ProfilePictureAndBackgroundComponent,
+    TitleComponent,
+    PresentationComponent,
+    ExperienceComponent,
+    EducationComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    FooterComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
