@@ -30,6 +30,7 @@
 
 @media (max-width: 700px) {
   img {
-    margin: calc(50% - 150px);
+    margin: calc(50% - 160px);
+    margin-top: 0px;
   }
 }

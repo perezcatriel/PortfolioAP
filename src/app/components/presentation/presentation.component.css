@@ -1,13 +1,14 @@
 h3 {
-  margin-top: 80px;
+  margin-top: 160px;
   font-size: 3.6rem;
   color: var(--blue);
   font-weight: 900;
-
 }
+
+h4,
 p {
-  margin-top: 80px;
   width: 90%;
   font-size: 2.4rem;
   color: var(--grey);
+  margin-top: 8px;
 }
