@@ -4,3 +4,45 @@ h3 {
   color: var(--blue);
   font-weight: 900;
 }
+
+li {
+  font-size: 2rem;
+  color: var(--grey);
+  margin: 16px 32px;
+}
+
+progress {
+  width: 60vw;
+  height: 8px;
+  background: var(--grey);
+  border-radius: 8px;
+
+}
+
+progress['value'] {
+  background-color: var(--white);
+}
+
+div {
+  width: 60vw;
+  height: 16px;
+  background-color: var(--white);
+  border-radius: 12px;
+
+}
+#bar1 {
+  background-color: var(--blue-light);
+  width: 68%;
+  /* height: 8px; */
+  z-index: 10;/* outline: solid var(--grey) 2px; */
+}
+
+#bar2 {
+  background-color: var(--blue-light);
+  width: 77%;
+}
+
+#bar3 {
+  background-color: var(--blue-light);
+  width: 86%;
+}

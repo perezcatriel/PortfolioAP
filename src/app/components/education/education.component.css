@@ -1,5 +1,13 @@
+ul {
+  margin-top: 16px;
+}
 
-
-dt, dd, dl {
+li,
+h4 {
   font-size: 2rem;
+  color: var(--grey);
+}
+
+li {
+  margin-left: 32px;
 }
