@@ -1,12 +1,12 @@
 main {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(1fr);
-  grid-area: "
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
+  /* grid-template-rows: repeat(1fr); */
+  /* grid-area: "
   title about
   title eduacation
   title experience
   title project
   title skill
-  ";
+  "; */
 }

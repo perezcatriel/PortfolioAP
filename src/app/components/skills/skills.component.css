@@ -5,22 +5,11 @@ h3 {
   font-weight: 900;
 }
 
-li {
+h4 {
   font-size: 2rem;
   color: var(--grey);
-  margin: 16px 32px;
-}
-
-progress {
-  width: 60vw;
-  height: 8px;
-  background: var(--grey);
-  border-radius: 8px;
-
-}
-
-progress['value'] {
-  background-color: var(--white);
+  margin: 24px 0 8px;
+  font-weight: 900;
 }
 
 div {
@@ -32,17 +21,17 @@ div {
 }
 #bar1 {
   background-color: var(--blue-light);
-  width: 68%;
+  width: 60%;
   /* height: 8px; */
   z-index: 10;/* outline: solid var(--grey) 2px; */
 }
 
 #bar2 {
   background-color: var(--blue-light);
-  width: 77%;
+  width: 40%;
 }
 
 #bar3 {
   background-color: var(--blue-light);
-  width: 86%;
+  width: 90%;
 }

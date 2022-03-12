@@ -5,7 +5,10 @@
   background-repeat: no-repeat;
   width: 100vw;
   height: 800px;
-  z-index: 1;
+
+ z-index: -10;
+ position: fixed;
+
 }
 
 .profile-image img {
@@ -13,7 +16,7 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: 770px;
+  top: 790px;
   left: 7%;
   width: 250px;
   height: 250px;
@@ -22,6 +25,7 @@
   border-radius: 50%;
   object-fit: cover;
   transition: transform 500ms ease-in-out;
+
 }
 .profile-image img:hover {
   transform: scale(1.2);

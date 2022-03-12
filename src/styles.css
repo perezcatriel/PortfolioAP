@@ -14,6 +14,7 @@
   box-sizing: border-box;
   font-family: var(--font);
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 h3 {
