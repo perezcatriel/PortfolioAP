@@ -10,3 +10,39 @@ main {
   title skill
   "; */
 }
+.container {
+  display: grid;
+  grid-template-areas:
+    "title about"
+    "title education"
+    "title experience"
+    "title project"
+    "title skill";
+}
+
+app-title {
+  /* grid-area: title; */
+  display: absolute;
+  position: sticky;
+  top: 300px;
+}
+
+app-presentation {
+  grid-area: about;
+}
+
+app-experience {
+  grid-area: experience;
+}
+
+app-education {
+  grid-area: education;
+}
+
+app-myProjects {
+  grid-area: project;
+}
+
+app-skills {
+  grid-area: skill;
+}

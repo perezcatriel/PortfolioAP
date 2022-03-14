@@ -1,7 +1,7 @@
 ul {
   display: flex;
-
   justify-content: space-around;
+
 }
 
 li {
@@ -19,7 +19,7 @@ li:hover {
 }
 
 a {
-  margin-top: 80px;
+  margin-top: 60px;
   font-size: 2rem;
   color: var(--white);
   font-weight: 900;
@@ -36,4 +36,7 @@ div {
   background-color: var(--grey);
   width: 100vw;
   height: 20vh;
+  box-shadow: 0 -5px 20px var(--blue-light);
+  border-top: 3px solid var(--white);
+
 }

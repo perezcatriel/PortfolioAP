@@ -6,14 +6,17 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 3px solid var(--white);
+  box-shadow: 0 5px 20px var(--blue-light);
   position: sticky;
   top: -20px;
   z-index: 10;
+
 }
 
 img {
   height: 100px;
   transition: transform 500ms ease-in-out;
+  margin-left: 25px;
 }
 
 img:hover {
@@ -59,7 +62,7 @@ header button {
   color: var(--grey);
   width: 100px;
   padding: 8px;
-  margin-right: 20px;
+  margin-right: 25px;
   border-radius: 8px;
   cursor: pointer;
 }

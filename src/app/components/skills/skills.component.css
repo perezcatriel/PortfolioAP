@@ -17,7 +17,7 @@ div {
   height: 16px;
   background-color: var(--white);
   border-radius: 12px;
-
+  margin-bottom: 80px;
 }
 #bar1 {
   background-color: var(--blue-light);
