@@ -1,14 +1,20 @@
+/* .container {
+
+  background-color: var(--grey);
+} */
+
 form {
   background-color: var(--blue);
   width: 400px;
   height: 350px;
-  position: absolute;
-  top: 300px;
+  position: fixed;
+  top: calc(50% - 175px);
   left: calc(50% - 200px);
   padding: 20px;
   text-align: center;
   border-radius: 20px;
-  box-shadow: 0 0 30px var(--blue-light);
+  box-shadow: 0 0 20px var(--blue-light);
+  z-index: 20;
 }
 
 h2 {
@@ -24,18 +30,24 @@ p {
 }
 
 input {
-  background-color: var(--grey);
+  background-color: var(--white);
   width: 365px;
   height: 50px;
   border-radius: 10px;
-  color: var(--white);
+  border: none;
+  box-shadow: 0 0 10px var(--grey);
+  color: var(--grey);
   font-size: 2.4rem;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 button {
   font-size: 2.4rem;
-  margin-top: 20px;
+  margin-top: 40px;
   width: 250px;
   height: 40px;
   border-radius: 10px;
+  color: var(--grey);
+  background-color: var(--white);
 }
