@@ -9,6 +9,9 @@ main {
   title project
   title skill
   "; */
+  filter: blur(12px);
+  /* background-color: var(--grey);
+  opacity: 1; */
 }
 .container {
   display: grid;

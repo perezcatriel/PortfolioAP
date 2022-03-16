@@ -12,4 +12,11 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  saludo(): void {
+    console.log('Hi');
+  }
+
+
 }
+
+

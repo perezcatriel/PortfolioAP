@@ -20,6 +20,7 @@ form {
 h2 {
   font-size: 3.6rem;
   color: var(--white);
+  text-shadow: 0 0 4px var(--grey);
   margin-bottom: 30px;
 }
 
@@ -37,10 +38,16 @@ input {
   border: none;
   box-shadow: 0 0 10px var(--grey);
   color: var(--grey);
+  text-shadow: 0 0 4px var(--blue);
   font-size: 2.4rem;
   padding: 10px;
   margin-top: 20px;
+  outline: none;
 }
+input:focus {
+  outline: 3px solid var(--grey);
+}
+
 
 button {
   font-size: 2.4rem;
@@ -48,6 +55,13 @@ button {
   width: 250px;
   height: 40px;
   border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px var(--grey);
   color: var(--grey);
   background-color: var(--white);
 }
+button:active {
+  background-color: var(--grey);
+  color: var(--white)
+}
+

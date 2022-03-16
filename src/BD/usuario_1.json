@@ -1,0 +1,94 @@
+{
+  "personal-data": {
+    "id-users": 1,
+    "email": "perezcatriel@gmail.com",
+    "password": "catriel1",
+    "name": "Catriel",
+    "lastname": "Pérez",
+    "phone": "3541-638060",
+    "address": "Av. San Martin 1221",
+    "gender": "M",
+    "cuil": "20-30240812-3",
+    "birthdate": "1983/07/21",
+    "profile_img": "http://localhost:4200/profile-picture.jpeg"
+  },
+
+  "about": {
+    "id_about": 1,
+    "presentation": "Estimado Recruiter,
+
+    Busca un Programador Web FullStack? Para un training en su empresa? Con conocimientos en JS, AngularJS, Java SE, MySql, HTML, CSS, Bootstrap, y metodologías ágiles? Con excelentes habilidades de comunicación oral y escrita? Pasión por aprender y mejorar sus habilidades y conocimientos?
+
+    Si es así, no necesita buscar más. Como puede ver en mi currículo, cumplo todos esos requisitos y muchos más. Me gustaría hablar sobre las oportunidades de trabajar con Uds. Para programar una entrevista,llámame al (54) 03541-15638060. El mejor momento para ponerse en contacto conmigo es a desde las 8 am. hasta las 4 pm., pero puede dejarme un mensaje de voz en cualquier momento y le devolveré la llamada.
+
+    Gracias por tomarse la molestia de revisar mi currículum. Espero hablar con usted pronto. Atentamente, Catriel Pérez. Adiós. "
+  },
+
+  "experience": {},
+
+  "education": {
+    "platzi": {
+    "id_education": 1,
+    "title": "Platzi",
+    "curse": "Cursos Programación Web",
+    "curse_data": "Comienzo 2022 - actualmente cursando..."
+  },
+  "argentina_programa": {
+    "id_education": 2,
+    "title": "Argentina Programa",
+    "curse": "Curso de programacion fullstack web",
+    "curse_data": "Comienzo noviembre 2021 - acualmente cursando..."
+  },
+  "w3school": {
+    "id_education": 3,
+    "title": "W3School",
+    "curse": "Cursos",
+    "curse_data": "Comienzo noviembre 2020"
+  },
+  "curso_algoritmo_logica": {
+    "id_education": 4,
+    "title": "Curso de Algoritmo y Logica",
+    "curse": "UTN",
+    "curse_data": "Comienzo noviembre 2019"
+  }
+  },
+
+  "projects": {
+    "project_1": {
+    "id_project": 1,
+    "name": "Platzi",
+    "image": "../assets/icon/external-content.duckduckgo.com.jpeg",
+    "description": "Plataforma de Educación online"
+  },
+  "project_2": {
+    "id_project": 2,
+    "name": "W3School",
+    "image": "../assets/icon/external-content.duckduckgo.com.jpeg",
+    "description": "Plataforma de lenguajes informaticos para aprender de forma interactiva"
+  },
+  "project_3": {
+    "id_project": 3,
+    "name": "UTN",
+    "image": "../assets/icon/external-content.duckduckgo.com.jpeg",
+    "description": "Universidad Tecnológica Nacional"
+  }
+  },
+
+  "skills": {
+    "skill_1": {
+    "id_skill": 1,
+    "name": "Metologías Ágiles",
+    "value": 90
+  },
+  "skill_2": {
+    "id_skill": 2,
+    "name": "Inglés",
+    "value": 60
+  },
+  "skill_3": {
+    "id_skill": 3,
+    "name": "Portugués",
+    "value": 40
+  }
+  }
+}
