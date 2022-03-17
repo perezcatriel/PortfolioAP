@@ -4,14 +4,29 @@
 
     <label>
       <!-- <p>Ingresa tu email</p> -->
-      <input type="text" name="" id="" placeholder="name@name.com" />
+      <input
+        type="text"
+        #inputEmail="ngModel"
+        [(ngModel)]="password"
+        placeholder="{{ email }}"
+      />
     </label>
 
-    <label for="">
-      <!-- <p>Ingresa tu contraseña</p> -->
-      <input type="password" name="" id="" placeholder="12345678" />
+    <label>
+      <input
+        type="text"
+        required
+        #inputPassword="ngModel"
+        [(ngModel)]="password"
+        placeholder="{{ password }}"
+      />
+
+      <!-- Example 1: <input [(ngModel)]="password" name="first"> -->
+      <!-- Example 2: <input [(ngModel)]="password" [ngModelOptions]="{standalone: true}/> -->
+
+      <p>Valid: {{ inputEmail.valid || inputPassword.valid ? true : "" }}</p>
     </label>
 
-    <button (click)="saludo()">Aceptar</button>
+    <button (click)="saludo(password)" >Aceptar</button>
   </form>
 </div>
