@@ -1,32 +1,36 @@
-<div class="container">
-  <form>
+<div class="container" >
+  <form #login="ngForm" (ngSubmit)="onRegister()" [ngClass]="{'logout': login.invalid, 'login':login.valid }">
     <h2>Registrate</h2>
 
     <label>
       <!-- <p>Ingresa tu email</p> -->
       <input
+        name="email"
         type="text"
         #inputEmail="ngModel"
-        [(ngModel)]="password"
-        placeholder="{{ email }}"
+        [(ngModel)]="register.email"
+        placeholder="{{ register.email }}"
+        required
       />
     </label>
 
     <label>
       <input
+        name="password"
         type="text"
         required
         #inputPassword="ngModel"
-        [(ngModel)]="password"
-        placeholder="{{ password }}"
+        [(ngModel)]="register.password"
+        placeholder="{{ register.password }}"
+        required
       />
 
       <!-- Example 1: <input [(ngModel)]="password" name="first"> -->
       <!-- Example 2: <input [(ngModel)]="password" [ngModelOptions]="{standalone: true}/> -->
 
-      <p>Valid: {{ inputEmail.valid || inputPassword.valid ? true : "" }}</p>
+      <!-- <p>Valid: {{ inputEmail.valid || inputPassword.valid ? true : "" }}</p> -->
     </label>
 
-    <button (click)="saludo(password)" >Aceptar</button>
+    <button  [class.valid]="login.valid" type="submit" >Aceptar</button>
   </form>
 </div>

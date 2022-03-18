@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,13 +9,22 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
   constructor() {}
 
-  password = 'catriel1';
-  email = 'perezcatriel@gmail.com';
-  btnDisabled = 'true';
+  register = {
+    password: 'catriel',
+    email: 'perezcatriel@gmail.com',
+  };
+  form = document.querySelector('.login');
+
 
   ngOnInit(): void {}
 
-  saludo(password: any, email: any): void {
-    alert(`password: ${password} \n email: ${email}`);
-  }
+  onRegister(): void {
+
+
+    if (
+      this.register.email === 'perezcatriel@gmail.com' &&
+      this.register.password === 'catriel1'
+    ) {
+      alert()
+  }}
 }
