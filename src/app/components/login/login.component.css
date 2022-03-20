@@ -20,9 +20,9 @@ form {
 
 }
 
-/* .login {
+.login {
   display: none;
-} */
+}
 .logout {
   display:block;
 }
@@ -77,7 +77,7 @@ button {
   color: var(--grey);
   background-color: var(--white);
   cursor: pointer;
-  display: none;
+ /*  display: none; */
 }
 button:active {
   background-color: var(--grey);

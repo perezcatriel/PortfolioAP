@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -15,16 +14,19 @@ export class LoginComponent implements OnInit {
   };
   form = document.querySelector('.login');
 
+  logout = 'block';
+  login = 'none';
+  email = "perezcatriel@gmail.com";
+  password = "catriel1";
 
   ngOnInit(): void {}
 
   onRegister(): void {
-
-
     if (
-      this.register.email === 'perezcatriel@gmail.com' &&
-      this.register.password === 'catriel1'
+      this.register.email === this.email &&
+      this.register.password === this.password
     ) {
-      alert()
-  }}
+      this.logout = this.login;
+    }
+  }
 }
