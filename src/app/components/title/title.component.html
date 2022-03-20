@@ -1,8 +1,8 @@
 <figure class="profile-image">
-  <img  />
+  <img [src]="person.img" />
 </figure>
 
 <section class="nombre">
-  <h2>FULLSTACK DEVELOPER</h2>
-  <h3>Catriel Pérez</h3>
+  <h2>{{ person.occupation.toUpperCase() }}</h2>
+  <h3>{{ person.name }} {{ person.lastname }}</h3>
 </section>
