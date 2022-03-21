@@ -27,6 +27,8 @@ export class LoginComponent implements OnInit {
       this.register.password === this.password
     ) {
       this.logout = this.login;
+    } else {
+      alert('No es un usuario registrado');
     }
   }
 }

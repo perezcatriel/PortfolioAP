@@ -1,8 +1,22 @@
 <div>
   <ul id="contact">
-    <li><img src="../../../assets/icon/email-outline.svg" alt=""><a href="mailto:perezcatriel@gmail.com">email</a></li>
-    <li><img src="../../../assets/icon/phone.svg" alt=""><a href="phone:3541638060">phone</a></li>
-    <li><img src="../../../assets/icon/icons8-github.svg"/><a href="https://github.com/perezcatriel">github</a></li>
+    <li>
+      <img [src]="contact.email.img" [alt]="contact.email.name" /><a
+        [href]="contact.email.myemail"
+        >{{ contact.email.name }}</a
+      >
+    </li>
+    <li>
+      <img [src]="contact.phone.img" alt="contact.phone.name" /><a
+        [href]="contact.phone.myphone"
+        >{{contact.phone.name}}</a
+      >
+    </li>
+    <li>
+      <img [src]="contact.github.img" /><a
+        [href]="contact.github.mygithub"
+        >{{contact.github.name}}</a
+      >
+    </li>
   </ul>
 </div>
-
