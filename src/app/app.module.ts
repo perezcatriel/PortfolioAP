@@ -36,7 +36,7 @@ import { InterceptorService } from './service/interceptor.service';
     PortfolioComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
-  providers: [PortfolioService,{provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi:true}],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
