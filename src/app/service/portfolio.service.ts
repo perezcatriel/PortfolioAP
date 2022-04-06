@@ -10,6 +10,6 @@ export class PortfolioService {
   constructor(private http:HttpClient) { }
 
   obtenerDatos():Observable<any>{
-    return this.http.get<any>(this.url+"persona");
+    return this.http.get<any>("../../BD/usuario_1.json");
   }
 }
