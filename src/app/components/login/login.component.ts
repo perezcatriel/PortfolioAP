@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AutentificacionService } from 'src/app/service/autentificacion.service';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +13,7 @@ export class LoginComponent implements OnInit {
 
   form:FormGroup;
 
-  constructor(private formBuilder:FormBuilder) {
+  constructor(private formBuilder:FormBuilder, private autentificacionService:AutentificacionService) {
     this.form=this.formBuilder.group(
       {
         email:['',[Validators.required, Validators.email]],
@@ -24,17 +27,6 @@ export class LoginComponent implements OnInit {
     )
   }
 
-  /* register = {
-    password: 'catriel',
-    email: 'perezcatriel@gmail.com',
-  };
-  form = document.querySelector('.login');
-
-  logout = 'block';
-  login = 'none';
-  email = "perezcatriel@gmail.com";
-  password = "catriel1"; */
-
   ngOnInit(): void {}
 
   get Email() {
@@ -45,14 +37,11 @@ export class LoginComponent implements OnInit {
     return this.form.get('password');
   }
 
- /*  onRegister(): void {
-    if (
-      this.register.email === this.email &&
-      this.register.password === this.password
-    ) {
-      this.logout = this.login;
-    } else {
-      alert('No es un usuario registrado');
-    }
-  } */
+  onEnviar(event:Event) {
+    event.preventDefault;
+    this.autentificacionService.iniciarSesion(this.form.value).subscribe(data=>{
+      console.log("DATA:" + JSON.stringify(data));
+      this.ruta.navigate(['/portfolio']);
+    })
+  }
 }

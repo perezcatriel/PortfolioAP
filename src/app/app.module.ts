@@ -16,6 +16,9 @@ import { ProjectsComponent } from './components/myProjects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { PortfolioService } from './service/portfolio.service';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { InterceptorService } from './service/interceptor.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     PortfolioComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
-  providers: [],
+  providers: [PortfolioService,{provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi:true}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
