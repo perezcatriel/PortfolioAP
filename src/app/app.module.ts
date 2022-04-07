@@ -15,6 +15,10 @@ import { ProjectsComponent } from './components/myProjects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 
+import { PageLoginComponent } from './pages/page-login/page-login.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { PagePortfolioComponent } from './pages/page-portfolio/page-portfolio.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +32,9 @@ import { LoginComponent } from './components/login/login.component';
     ProjectsComponent,
     FooterComponent,
     LoginComponent,
+    PageLoginComponent,
+    PageNotFoundComponent,
+    PagePortfolioComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
