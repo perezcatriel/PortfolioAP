@@ -10,13 +10,12 @@ header {
   position: sticky;
   top: -20px;
   z-index: 10;
-
 }
 
 img {
   height: 100px;
   transition: transform 500ms ease-in-out;
-  margin-left: 25px;
+  margin-left: 10px;
 }
 
 img:hover {
@@ -29,10 +28,12 @@ h1 {
   color: var(--white);
   font-weight: 900;
   text-shadow: 0 0 4px var(--grey);
+  display: none;
 }
 
 ul {
   display: flex;
+  display: none;
 }
 
 li a,
@@ -42,7 +43,6 @@ li {
   list-style: none;
   text-decoration: none;
   color: var(--white);
-  /* text-shadow: 0 0 4px var(--grey); */
   font-weight: 900;
   transition: transform 500ms ease-in-out;
 }
@@ -79,23 +79,20 @@ header button:active {
   border: 1px solid var(--white);
 }
 
-
-@media (max-width: 1200px) {
-  nav {
-    display: none;
-  }
-}
-
-@media (max-width: 450px) {
-  header figure img {
-    width: 40vw;
-    /* height: 20vh; */
-    margin: 20px 0;
-  }
-}
-
-@media (max-width: 700px) {
+@media only screen and (min-width: 700px) {
   h1 {
-    display: none;
+    display: block;
+  }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+h1 {
+    display: block;
+  }
+
+  ul {
+    display: flex;
   }
 }
