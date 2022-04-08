@@ -1,36 +1,33 @@
-/* .container {
-
-  background-color: var(--grey);
-} */
+img {
+  filter: blur(10px);
+  width: 100vw;
+}
 
 form {
   background-color: var(--blue);
-  width: 400px;
-  height: 350px;
+  width: 300px;
+  height: 460px;
   position: fixed;
-  top: calc(50% - 175px);
-  left: calc(50% - 200px);
+  top: calc(50% - 230px);
+  left: calc(50% - 150px);
   padding: 20px;
   text-align: center;
   border: 1px solid var(--blue-light);
   border-radius: 20px;
   box-shadow: 0 0 30px var(--blue-light);
   z-index: 20;
-
-
 }
 
 .login {
   display: none;
 }
+
 .logout {
-  display:block;
+  display: block;
 }
 
-
-/* corregir nombre. esto es para el boton del formulario */
 .container .valid {
-  display:block;
+  display: block;
   margin: 40px auto;
 }
 
@@ -42,33 +39,39 @@ h2 {
 }
 
 p {
-  font-size: 2.4rem;
+
   color: var(--grey);
   margin-top: 10px;
 }
 
 input {
-  background-color: var(--white);
-  width: 365px;
+  background-color: var(--blue-light);
+  width: 250px;
   height: 50px;
   border-radius: 10px;
   border: none;
   box-shadow: 0 0 10px var(--grey);
   color: var(--grey);
   text-shadow: 0 0 4px var(--blue);
-  font-size: 2.4rem;
+  font-size: 2rem;
   padding: 10px;
   margin-top: 20px;
+
   outline: none;
 }
+
 input:focus {
   outline: 3px solid var(--grey);
 }
 
+p {
+  font-size: 1.6rem;
+  color: var(--grey);
+}
 
 button {
   font-size: 2.4rem;
-  margin-top: 40px;
+  margin-top: 60px;
   width: 250px;
   height: 40px;
   border-radius: 10px;
@@ -77,11 +80,94 @@ button {
   color: var(--grey);
   background-color: var(--white);
   cursor: pointer;
- /*  display: none; */
 }
+
 button:active {
   background-color: var(--grey);
   color: var(--white);
-
 }
 
+@media only screen and (min-width: 700px) {
+  img {
+    filter: blur(10px);
+    width: 100vw;
+  }
+
+  form {
+    background-color: var(--blue);
+    width: 600px;
+    height: 500px;
+    position: fixed;
+    top: calc(50% - 220px);
+    left: calc(50% - 300px);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--blue-light);
+    border-radius: 20px;
+    box-shadow: 0 0 30px var(--blue-light);
+    z-index: 20;
+  }
+
+  .login {
+    display: none;
+  }
+
+  .logout {
+    display: block;
+  }
+
+  .container .valid {
+    display: block;
+    margin: 40px auto;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+    color: var(--white);
+    text-shadow: 0 0 4px var(--grey);
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 2.4rem;
+    color: var(--grey);
+    margin-top: 10px;
+  }
+
+  input {
+    background-color: var(--blue-light);
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px var(--grey);
+    color: var(--grey);
+    text-shadow: 0 0 4px var(--blue);
+    font-size: 2.4rem;
+    padding: 10px;
+    margin-top: 20px;
+    outline: none;
+  }
+
+  input:focus {
+    outline: 3px solid var(--grey);
+  }
+
+  button {
+    font-size: 2.4rem;
+    margin-top: 60px;
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px var(--grey);
+    color: var(--grey);
+    background-color: var(--white);
+    cursor: pointer;
+  }
+
+  button:active {
+    background-color: var(--grey);
+    color: var(--white);
+  }
+}
