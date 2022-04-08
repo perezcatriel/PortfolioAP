@@ -11,6 +11,7 @@
         [(ngModel)]="register.email"
         placeholder="{{ register.email }}"
         required
+        (keydown)="valido($event)"
       />
       <p>Ingrese un email valido</p>
     </label>

@@ -21,6 +21,12 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  valido(e:any) {
+    if (e === this.email) {
+      alert("bienvenido");
+    }
+  }
+
   onRegister(): void {
     if (
       this.register.email === this.email &&
