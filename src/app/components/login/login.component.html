@@ -12,9 +12,12 @@
         placeholder="{{ register.email }}"
         required
       />
-      <p *ngIf="register.email !== 'perezcatriel@gmail.com'">
+      <p *ngIf="register.email !== 'perezcatriel@gmail.com'; else emailValido">
         Ingrese un email valido
       </p>
+      <ng-template #emailValido>
+        <p>Todo OK</p>
+      </ng-template>
     </label>
 
     <label>
@@ -27,8 +30,16 @@
         placeholder="{{ register.password }}"
         required
       />
-      <p *ngIf="register.password.length < 8">8 caracteres minimo</p>
-      <p *ngIf="register.password === ''">letras y numeros requerido</p>
+      <p *ngIf="register.password.length < 8; else caracteres">
+        8 caracteres minimo
+      </p>
+      <ng-template #caracteres>
+        <p>cantidad caracteres OK</p>
+      </ng-template>
+      <p *ngIf="register.password === ''; else letrasNumeros">letras y numeros requerido</p>
+      <ng-template #letrasNumeros>
+        <p>Uso correcto de letras y numeros</p>
+      </ng-template>
     </label>
 
     <button type="submit" (click)="onRegister()" [ngClass]="''">Aceptar</button>
