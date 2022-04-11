@@ -18,6 +18,8 @@ import { LoginComponent } from './components/login/login.component';
 import { PageLoginComponent } from './pages/page-login/page-login.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { PagePortfolioComponent } from './pages/page-portfolio/page-portfolio.component';
+import { PageEdicionComponent } from './pages/page-edicion/page-edicion.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { PagePortfolioComponent } from './pages/page-portfolio/page-portfolio.co
     PageLoginComponent,
     PageNotFoundComponent,
     PagePortfolioComponent,
+    PageEdicionComponent,
+    FormularioComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
