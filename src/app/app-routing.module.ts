@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { PageLoginComponent } from './pages/page-login/page-login.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { PagePortfolioComponent } from './pages/page-portfolio/page-portfolio.component';
+import { PageEdicionComponent } from './pages/page-edicion/page-edicion.component';
 
 const routes: Routes = [
   { path: 'portfolio', component: PagePortfolioComponent },
   { path: '', component: PageLoginComponent },
+  { path: 'edicion', component: PageEdicionComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
