@@ -33,14 +33,13 @@ form {
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 4rem;
   color: var(--white);
   text-shadow: 0 0 4px var(--grey);
   margin-bottom: 30px;
 }
 
 p {
-
   color: var(--grey);
   margin-top: 10px;
 }
@@ -94,11 +93,6 @@ button:active {
 }
 
 @media only screen and (min-width: 700px) {
-  img {
-    filter: blur(10px);
-    width: 100vw;
-  }
-
   form {
     background-color: var(--blue);
     width: 600px;
@@ -112,26 +106,6 @@ button:active {
     border-radius: 20px;
     box-shadow: 0 0 30px var(--blue-light);
     z-index: 20;
-  }
-
-  .login {
-    display: none;
-  }
-
-  .logout {
-    display: block;
-  }
-
-  .container .valid {
-    display: block;
-    margin: 40px auto;
-  }
-
-  h2 {
-    font-size: 3.6rem;
-    color: var(--white);
-    text-shadow: 0 0 4px var(--grey);
-    margin-bottom: 30px;
   }
 
   p {
@@ -159,10 +133,6 @@ button:active {
     outline: none;
   }
 
-  input:focus {
-    outline: 3px solid var(--grey);
-  }
-
   button {
     font-size: 2.4rem;
     margin-top: 60px;
@@ -174,10 +144,5 @@ button:active {
     color: var(--grey);
     background-color: var(--white);
     cursor: pointer;
-  }
-
-  button:active {
-    background-color: var(--grey);
-    color: var(--white);
   }
 }
