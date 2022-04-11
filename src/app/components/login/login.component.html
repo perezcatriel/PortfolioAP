@@ -1,5 +1,5 @@
 <div class="container">
-  <img src="../../../assets/image/background-picture-xl.jpg" alt="">
+  <img src="../../../assets/image/background-picture-xl.jpg" alt="" />
   <form #login="ngForm" [style.display]="logout">
     <h2>Registrate</h2>
 
@@ -12,7 +12,9 @@
         placeholder="{{ register.email }}"
         required
       />
-      <p>Ingrese un email valido</p>
+      <p *ngIf="register.email !== 'perezcatriel@gmail.com'">
+        Ingrese un email valido
+      </p>
     </label>
 
     <label>
@@ -25,8 +27,8 @@
         placeholder="{{ register.password }}"
         required
       />
-      <p>8 caracteres minimo</p>
-      <p>letras y numeros requerido</p>
+      <p *ngIf="register.password.length < 8">8 caracteres minimo</p>
+      <p *ngIf="register.password === ''">letras y numeros requerido</p>
     </label>
 
     <button type="submit" (click)="onRegister()" [ngClass]="''">Aceptar</button>
