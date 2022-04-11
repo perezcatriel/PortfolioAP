@@ -45,6 +45,11 @@ p {
   margin-top: 10px;
 }
 
+p .valido {
+  display: none;
+  color: var(--blue);
+}
+
 input {
   background-color: var(--blue-light);
   width: 250px;
@@ -133,6 +138,10 @@ button:active {
     font-size: 2.4rem;
     color: var(--grey);
     margin-top: 10px;
+  }
+
+  .valido {
+    color: var(--blue);
   }
 
   input {

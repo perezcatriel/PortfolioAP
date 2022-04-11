@@ -14,8 +14,6 @@ export class LoginComponent implements OnInit {
   };
   form = document.querySelector('.login');
 
-  logout = 'block';
-  login = 'none';
   email = "perezcatriel@gmail.com";
   password = "catriel1";
 
@@ -32,7 +30,7 @@ export class LoginComponent implements OnInit {
       this.register.email === this.email &&
       this.register.password === this.password
     ) {
-      this.logout = this.login;
+
     } else {
       alert('No es un usuario registrado');
     }
