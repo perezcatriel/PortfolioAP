@@ -10,6 +10,6 @@ export class PersonasService {
   constructor(private http: HttpClient) { }
 
   getPersonas() {
-    return this.http.get<Persona[]>('https://fakestoreapi.com/products');
+    return this.http.get<Persona[]>(`http://localhost:8080/ver/personas`);
   }
 }

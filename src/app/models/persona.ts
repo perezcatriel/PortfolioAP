@@ -1,6 +1,6 @@
 export interface Persona {
   "id"?: number,
-  "nombre": string,
+  "title": string,
   "apellido": string,
   "fecha_nacimiento"?: string,
   "domicilio"?: string,
