@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { PersonasService } from 'src/app/services/personas.service';
+import { Persona } from 'src/app/models/persona';
 
 @Component({
   selector: 'app-formulario',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioComponent implements OnInit {
 
-  constructor() { }
+  persona: Persona[] = [];
+
+  constructor(private personas: PersonasService) { }
 
   ngOnInit(): void {
+    this.personas.getPersonas()
+    .subscribe(data => {
+      this.persona = data;
+      console.log(this.persona);
+    });
   }
 
 }
