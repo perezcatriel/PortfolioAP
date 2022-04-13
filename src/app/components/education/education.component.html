@@ -1,4 +1,4 @@
-<h3>Educación</h3>
+<h3>Educación<a routerLink="/edicion"><img src="../../../assets/icon/editar.svg" alt="" class="edicion"></a></h3>
 <main>
   <ul>
     <h4>
@@ -15,7 +15,7 @@
   </ul>
 
   <ul>
-    <h4><img [src]="education.ap.icon" alt="" />{{ education.ap.name }} <a routerLink="/edicion"><img src="../../../assets/icon/editar.svg" alt="" class="edicion"></a>  </h4>
+    <h4><img [src]="education.ap.icon" alt="" class="icono-educacion" />{{ education.ap.name }} <a routerLink="/edicion"><img src="../../../assets/icon/editar.svg" alt="" class="edicion"></a>  </h4>
     <li>{{ education.ap.type }}</li>
     <li>{{ education.ap.date }}</li>
     <img [src]="education.ap.image" [alt]="education.ap.name" class="image" />
