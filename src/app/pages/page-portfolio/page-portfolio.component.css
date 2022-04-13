@@ -1,0 +1,41 @@
+main {
+  width: 100vw;
+}
+
+.container {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "titulo acerca-de"
+    "titulo experiencia"
+    "titulo proyectos"
+    "titulo educacion"
+    "titulo skill";
+}
+
+app-title {
+  grid-area: titulo;
+  position: sticky;
+  top: 100px;
+}
+
+app-presentation {
+  grid-area: acerca-de;
+}
+
+app-experience {
+  grid-area: experiencia;
+}
+
+app-education {
+  grid-area: educacion;
+}
+
+app-myProjects {
+  grid-area: proyectos;
+}
+
+app-skills {
+  grid-area: skill;
+}

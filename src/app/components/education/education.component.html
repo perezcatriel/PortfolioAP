@@ -1,34 +1,45 @@
 <h3>Educación</h3>
+<main>
+  <ul>
+    <h4>
+      <img [src]="education.platzi.icon" alt="" />{{ education.platzi.name }}
+    </h4>
 
-<ul>
-  <h4><img [src]="education.platzi.icon" alt="" />{{ education.platzi.name }}</h4>
+    <li>{{ education.platzi.type }}</li>
+    <li>{{ education.platzi.date }}</li>
+    <img
+      [src]="education.platzi.image"
+      [alt]="education.platzi.name"
+      class="image"
+    />
+  </ul>
 
-  <li>{{ education.platzi.type }}</li>
-  <li>{{ education.platzi.date }}</li>
-  <img [src]="education.platzi.image" [alt]="education.platzi.name" class="image" />
-</ul>
+  <ul>
+    <h4><img [src]="education.ap.icon" alt="" />{{ education.ap.name }} <a routerLink="/edicion"><img src="../../../assets/icon/editar.svg" alt="" class="edicion"></a>  </h4>
+    <li>{{ education.ap.type }}</li>
+    <li>{{ education.ap.date }}</li>
+    <img [src]="education.ap.image" [alt]="education.ap.name" class="image" />
+  </ul>
 
-<ul>
-  <h4><img [src]="education.ap.icon" alt="" />{{education.ap.name}}</h4>
-  <li>{{education.ap.type}}</li>
-  <li>{{education.ap.date}}</li>
-  <img [src]="education.ap.image" [alt]="education.ap.name" class="image" />
-</ul>
+  <ul>
+    <h4>
+      <img [src]="education.w3school.icon" alt="" />{{
+        education.w3school.name
+      }}
+    </h4>
+    <li>{{ education.w3school.type }}</li>
+    <li>{{ education.w3school.date }}</li>
+    <img
+      [src]="education.w3school.image"
+      [alt]="education.w3school.name"
+      class="image"
+    />
+  </ul>
 
-<ul>
-  <h4>
-    <img [src]="education.w3school.icon" alt="" />{{education.w3school.name}}
-  </h4>
-  <li>{{education.w3school.type}}</li>
-  <li>{{education.w3school.date}}</li>
-  <img [src]="education.w3school.image" [alt]="education.w3school.name" class="image" />
-</ul>
-
-<ul>
-  <h4>
-    <img [src]="education.utn.icon" alt="" />{{education.utn.name}}
-  </h4>
-  <li>{{education.utn.type}}</li>
-  <li>{{education.utn.date}}</li>
-  <img [src]="education.utn.image" [alt]="education.utn.name" class="image" />
-</ul>
+  <ul>
+    <h4><img [src]="education.utn.icon" alt="" />{{ education.utn.name }}</h4>
+    <li>{{ education.utn.type }}</li>
+    <li>{{ education.utn.date }}</li>
+    <img [src]="education.utn.image" [alt]="education.utn.name" class="image" />
+  </ul>
+</main>

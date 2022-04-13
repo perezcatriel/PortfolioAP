@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,14 +15,15 @@ export class LoginComponent implements OnInit {
   };
   form = document.querySelector('.login');
 
-  email = "perezcatriel@gmail.com";
-  password = "catriel1";
+  email = 'perezcatriel@gmail.com';
+  password = 'catriel1';
+
 
   ngOnInit(): void {}
 
-  valido(e:any) {
+  valido(e: any) {
     if (e === this.email) {
-      alert("bienvenido");
+      alert('bienvenido');
     }
   }
 

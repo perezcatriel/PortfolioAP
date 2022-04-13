@@ -9,7 +9,7 @@ export class TitleComponent implements OnInit {
   person = {
     name: 'Catriel',
     lastname: 'Pérez',
-    occupation: 'Fullstack Developer',
+    occupation: 'Developer WEb',
     img: '../../../assets/image/profile-picture.jpeg',
   };
 
