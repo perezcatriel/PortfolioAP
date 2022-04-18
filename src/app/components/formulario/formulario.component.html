@@ -1,9 +1,12 @@
 <p>Estamos trabajando ...</p>
 
-<div class="container">
+<button type="button" (click)="createNewPerson()">Boton</button>
+
+<div class="container" *ngIf="persona.length > 0">
   <!-- <app-persona [persona]="persona" *ngFor="let persona of personas" (addedPersona)="getPersonas($event)">
 
   </app-persona> -->
 
   <p *ngFor="let per of persona">Nombre: {{per.nombre}} <br> apellido: {{per.apellido}} <br><br></p>
+
 </div>

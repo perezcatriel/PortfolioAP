@@ -9,3 +9,7 @@ export interface Persona {
   "sobre_mi": string,
   "url_foto"?: string
 }
+
+export interface CreatePersonaDTO extends Omit<Persona,'fecha_nacimiento' | 'domicilio' | 'telefono'> {
+  categoriaId: number;
+}
