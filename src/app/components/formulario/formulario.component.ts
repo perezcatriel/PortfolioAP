@@ -25,15 +25,15 @@ export class FormularioComponent implements OnInit {
 
   createNewPerson(){
     const persona: CreatePersonaDTO = {
-      nombre: '',
-      apellido: '',
-      categoriaId: 0,
+      nombre: 'chavo',
+      apellido: 'del 8',
+      id: 100,
       correo: '',
       sobre_mi: '',
     };
 
-    this.personasService.crear(persona)
-    .subscribe((data: any) => {
+    this.personasService.create(persona)
+    .subscribe((data: Persona) => {
       console.log('created', data);
     });
   }

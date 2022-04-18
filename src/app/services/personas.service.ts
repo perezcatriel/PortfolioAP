@@ -8,7 +8,8 @@ import { CreatePersonaDTO, Persona } from '../models/persona';
 export class PersonasService {
 
   private apiUrl = 'http://localhost:8080';
-  static crear: any;
+
+  static create: any;
 
   constructor(private http: HttpClient) { }
 
@@ -20,7 +21,7 @@ export class PersonasService {
     return this.http.get<Persona>(`${this.apiUrl}/ver/{id}`);
   }
 
-  crear(dto: CreatePersonaDTO) {
-    return this.http.post<Persona>(this.apiUrl, dto);
+  create(dto: CreatePersonaDTO) {
+    return this.http.post<Persona>(`${this.apiUrl}/agregar/persona`, dto);
   }
 }

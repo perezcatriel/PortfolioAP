@@ -11,5 +11,5 @@ export interface Persona {
 }
 
 export interface CreatePersonaDTO extends Omit<Persona,'fecha_nacimiento' | 'domicilio' | 'telefono'> {
-  categoriaId: number;
+  id: number;
 }
